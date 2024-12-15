@@ -1,0 +1,16 @@
+.header {
+  padding: 1rem;
+  background-color: #4caf50;
+  color: #fff;
+  text-align: center;
+}
+
+.main {
+  padding: 1rem;
+}
+
+.footer {
+  text-align: center;
+  padding: 1rem;
+  background-color: #f1f1f1;
+}

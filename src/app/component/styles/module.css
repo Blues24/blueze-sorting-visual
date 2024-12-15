@@ -1,0 +1,116 @@
+body {
+    font-family: "Arial", sans-serif;
+    background-color: #24283b; /* Tokyo Night Storm Background */
+    color: #c0caf5; /* Text color */
+    margin: 0;
+    padding: 0;
+  }
+  
+  .sorting-visualizer {
+    text-align: center;
+    padding: 1rem;
+  }
+  
+  h1 {
+    color: #7aa2f7; /* Highlighted header text */
+    font-size: 2rem;
+    margin-bottom: 1rem;
+  }
+  
+  .controls {
+    margin-bottom: 1rem;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 1rem;
+  }
+  
+  button {
+    background-color: #7dcfff; /* Tokyo Night Storm Button */
+    color: #24283b; /* Button Text */
+    border: none;
+    border-radius: 5px;
+    padding: 0.6rem 1.2rem;
+    cursor: pointer;
+    font-size: 1rem;
+    transition: all 0.3s ease;
+  }
+  
+  button:disabled {
+    background-color: #3b4261; /* Disabled button */
+    cursor: not-allowed;
+  }
+  
+  button:hover:not(:disabled) {
+    background-color: #2ac3de; /* Button hover */
+  }
+  
+  select {
+    background-color: #3b4261;
+    color: #c0caf5;
+    border: none;
+    border-radius: 5px;
+    padding: 0.5rem;
+    font-size: 1rem;
+  }
+  
+  input[type="range"],
+  input[type="number"] {
+    background-color: #3b4261;
+    color: #c0caf5;
+    border: none;
+    border-radius: 5px;
+    padding: 0.3rem 0.5rem;
+    font-size: 1rem;
+  }
+  
+  label {
+    font-size: 1rem;
+    color: #a9b1d6; /* Subtle text */
+  }
+  
+  svg.array-container {
+    margin: 1rem auto;
+    display: block;
+    background-color: #1a1b26; /* Canvas background */
+    border: 1px solid #3b4261; /* Border for contrast */
+    border-radius: 10px;
+  }
+  
+  rect {
+    fill: #7aa2f7; /* Bar color */
+    transition: fill 0.3s ease, height 0.3s ease;
+  }
+  
+  rect:hover {
+    fill: #bb9af7; /* Highlighted bar hover */
+  }
+  
+  .speed-control,
+  .array-size-control {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    justify-content: center;
+  }
+  
+  .speed-control label,
+  .array-size-control label {
+    margin-right: 0.5rem;
+    color: #9aa5ce;
+  }
+  
+  input[type="range"]::-webkit-slider-thumb {
+    background-color: #7dcfff; /* Slider handle */
+    border: none;
+    border-radius: 50%;
+    width: 16px;
+    height: 16px;
+  }
+  
+  input[type="range"]::-webkit-slider-runnable-track {
+    background-color: #3b4261;
+    height: 6px;
+    border-radius: 3px;
+  }
+  
