@@ -41,3 +41,6 @@ yarn-error.log*
 next-env.d.ts
 #Readme file
 README.md
+
+# Local Netlify folder
+.netlify
